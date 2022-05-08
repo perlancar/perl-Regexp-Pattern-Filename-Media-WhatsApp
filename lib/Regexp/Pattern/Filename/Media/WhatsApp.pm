@@ -18,6 +18,7 @@ $RE{filename_video_whatsapp} = {
                   (?:IMG-[0-9]{8}-WA[0-9]{4,}\.(?:JPG|jpg))|
                   (?:VID-[0-9]{8}-WA[0-9]{4,}\.(?:MP4|mp4))
               )\z/x,
+    tags => ['anchored'],
     examples => [
         {str=>'foo.jpg', matches=>0, summary=>'No pattern'},
         {str=>'foo.mp4', matches=>0, summary=>'No pattern'},
